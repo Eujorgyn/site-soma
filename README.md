@@ -50,20 +50,19 @@ Resposta:
 }
 ```
 
-## Evidências
+## Testando pelo terminal
 
-### Requisição GET bem-sucedida
+Com o servidor rodando, a requisição POST pode ser testada com `curl`:
 
-Acesso a `http://localhost:3001/` pelo navegador:
+```bash
+curl -X POST http://localhost:3001/soma \
+  -H "Content-Type: application/json" \
+  -d '{ "a": 10, "b": 5 }'
+```
 
-![Evidência da requisição GET](evidencias/get.png)
-
-### Requisição POST bem-sucedida
-
-Envio de `{ "a": 10, "b": 5 }` para a rota `/soma` e resposta do servidor:
-
-![Evidência da requisição POST](evidencias/post.png)
+Ou pelo navegador, na página `http://localhost:3001/teste`.
 
 ## Autor
 
-Jorge Gabriel
+**Jorge Gabriel**, estudante de Análise e Desenvolvimento de Sistemas na UNIFOR.
+[GitHub](https://github.com/Eujorgyn) · jorgegabrielpinheirofrutuoso@gmail.com
